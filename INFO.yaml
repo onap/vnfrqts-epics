@@ -3,13 +3,13 @@ project: 'vnfrqts-epics'
 project_creation_date: '2017-06-29'
 project_category: ''
 lifecycle_state: 'Incubation'
-project_lead: &onap_vnfrqts-epics_ptl
+project_lead: &onap_releng_ptl
     name: 'Steven Wright'
     email: 'sw3588@att.com'
     id: 'wombat123'
     company: 'ATT'
     timezone: 'America/Atlanta'
-primary_contact: *onap_vnfrqts-epics_ptl
+primary_contact: *onap_releng_ptl
 issue_tracking:
     type: 'jira'
     url: 'https://jira.onap.org/projects/VNFRQTS'
@@ -28,22 +28,20 @@ meetings:
       repeats: 'weekly'
       time: '13:00 UTC'
 repositories:
-    - 'vnfrqts-epics'
+    - 'vnfrqts/epics'
 committers:
-    - <<: *onap_vnfrqts-epics_ptl
-    - name: 'wenyao guan'
-      email: 'guanwenyao@chinamobile.com'
-      company: 'China Mobile'
-      id: 'guanwenyao'
-      timezone: 'Asia/Shanghai'
+    - <<: *onap_releng_ptl
     - name: 'Hagop Bozawglanian'
       email: 'hb755d@att.com'
       company: 'ATT'
       id: 'hb755d'
-      timezone: 'Asia/Los Angeles'
+      timezone: 'America/Los Angeles'
 tsc:
     approval: 'https://lists.onap.org/pipermail/onap-tsc'
     changes:
         - type: 'Addition'
           name: 'Hagop Bozawglanian'
           link: 'https://lists.onap.org/pipermail/onap-tsc/2018-June/004978.html'
+        - type: 'Removal'
+          name: 'wenyao guan'
+          link: 'https://https://lists.onap.org/g/onap-tsc/message/5786'
